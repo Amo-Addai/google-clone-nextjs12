@@ -1,0 +1,11 @@
+
+- setup next.js app
+npx create-next-app@12.22.0 google-clone
+cd google-clone
+npm run dev - test app
+
+- setup tailwindcss
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+- npm run dev / build > start after dev
