@@ -9,3 +9,29 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 
 - npm run dev / build > start after dev
+
+- setup next-auth
+npm install next-auth
+
+
+- Setup GCP (Google Cloud Platform)
+- setup gcp account > go to console
+- create new project: gg-clone
+- side-nav to APIs and services > Credentials
+    - Configure Consent Screen
+    - opens up OAuth consent screen
+        - choose External User Type & Create
+        - OAuth consent screen-tab
+            - set App name: gg-clone
+            - set (your) User support email
+            - set App domain > Application home page: app's url / localhost
+            - set Developer contact information > Email addresses: yours
+        - Save and continue
+    - Also Save & continue through tabs: Scopes tab > Test users > Summary
+        - now, go Back to dashboard
+- re-side-nav to Credentials
+    - Create Credentials (top-nav) > OAuth client ID
+    - set Web Application type
+    - set Name: gg-clone
+    - set both Authorised Js origins & redirect URIs > URIs 1: app's url / localhost (:3000 port for next-app)
+    - Create - copy Your Client ID & Client Secret
