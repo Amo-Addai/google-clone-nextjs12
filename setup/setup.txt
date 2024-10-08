@@ -4,14 +4,15 @@ npx create-next-app@12.22.0 google-clone
 cd google-clone
 npm run dev - test app
 
-- setup tailwindcss
+- setup tailwindcss, if not already setup in create-next-app cli-wizard
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 
 - npm run dev / build > start after dev
 
-- setup next-auth
-npm install next-auth
+- install next-auth, & others
+npm install --save next-auth | @heroicons/react | 
+
 
 
 - Setup GCP (Google Cloud Platform)
@@ -33,5 +34,8 @@ npm install next-auth
     - Create Credentials (top-nav) > OAuth client ID
     - set Web Application type
     - set Name: gg-clone
-    - set both Authorised Js origins & redirect URIs > URIs 1: app's url / localhost (:3000 port for next-app)
-    - Create - copy Your Client ID & Client Secret
+    - set both Authorized Js origins & redirect URIs > URIs 1: app's url / localhost (:3000 port for next-app)
+        - Authorized Js origins: http://localhost:3000
+        - Authorized redirect URIs: http://localhost:3000/api/auth/callback/google - will be callback url for next-auth GoogleProvider
+    - Create - copy Your Client ID & Client Secret - paste in .env file
+    

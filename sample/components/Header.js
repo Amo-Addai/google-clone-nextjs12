@@ -1,7 +1,7 @@
 import User from './User'
 
 
-export default () => (
+export default () =>
     <header className={'flex justify-between p-5 text-sm text-gray-700'}>
         <div className={'flex space-x-4 items-center'}>
             <p className={'link'}>About</p>
@@ -13,4 +13,3 @@ export default () => (
             <User />
         </div>
     </header>
-)

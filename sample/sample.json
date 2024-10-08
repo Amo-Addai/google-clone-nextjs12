@@ -1,0 +1,6 @@
+{
+  "path": "./styles/globals.css",
+  "a": "./public/index.html",
+  "b": "./public/index.js",
+  "c": "./pages/index.js"
+}
