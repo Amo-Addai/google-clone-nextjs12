@@ -27,7 +27,7 @@ export default ({
         // cannot return null in- comma-separated -scope
         !!input // instead exec remaining logic based on validation
         && router.push(
-            `/search?term=${input.trim()}`
+            `/search?term=${input.trim()}&searchType=`
         )
     ),
     <div>

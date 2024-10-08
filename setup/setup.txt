@@ -38,4 +38,21 @@ npm install --save next-auth | @heroicons/react |
         - Authorized Js origins: http://localhost:3000
         - Authorized redirect URIs: http://localhost:3000/api/auth/callback/google - will be callback url for next-auth GoogleProvider
     - Create - copy Your Client ID & Client Secret - paste in .env file
-    
+* - NB: also open new tab - get Google Api Key from developers.google.com
+    - url: developers.google.com/custom-search/v1/using_rest?hl=en&authuser=1
+    - will also copy-paste in .env file
+        - API key - identify your application
+        - Get a Key, with Programmable Search Engine
+            - select project: gg-clone; Next
+            - copy-paste in .env file; Done
+            - Go back to previous page
+        - Programmable Search Engine ID - Control Panel
+            - creating a new Programmable Search Engine:
+            - Add new search engine
+                - add only www.google.com in Sites to search
+                - default language; set name of search engine: gg-clone
+                - verify captcha & Create
+            - before adding it to site, Modify search engine in Control Panel
+                - Search the entire web: ON; Image search: ON
+            - go back & Get code
+                - copy-paste ?cx="[GOOGLE_API_CONTEXT_KEY_VALUE]" in <script> snippet to .env file
