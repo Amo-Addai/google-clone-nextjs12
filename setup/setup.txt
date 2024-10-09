@@ -56,3 +56,4 @@ npm install --save next-auth | @heroicons/react |
                 - Search the entire web: ON; Image search: ON
             - go back & Get code
                 - copy-paste ?cx="[GOOGLE_API_CONTEXT_KEY_VALUE]" in <script> snippet to .env file
+                
